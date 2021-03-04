@@ -1,5 +1,5 @@
 async function apiCall(target) {
-  const response = await fetch('https://decapi.me/twitch/subcount/purple_foundation');
+  const response = await fetch('https://decapi.me/twitch/subcount/<streamer>');
   const json = await response.json();
   $('#value').text(parseInt(json, 10));
   return json;
