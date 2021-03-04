@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.goal-cont {
+  color: black;
+  position: relative;
+  text-align: center;
+}
+
+#Progress_Status { 
+  width: 50%; 
+  margin: auto;
+  height: 35px; 
+  background-color: #ddd;
+} 
+  
+#progress {
+  position: relative;
+  width: 0%;
+  height: 35px; 
+  background-color: #41D553;
+  line-height: 16px; 
+  color: black;
+}
+
+#value {
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  vertical-align: center;
+  transform: translate(-50%, -50%);
+  font-family: 'Open Sans', sans-serif;
+}
