@@ -1,0 +1,3 @@
+# Important
+
+Twitch's API does not have public endpoints for subscriber count, as that information is considered protected. Rather than deal with requiring an OAuth token, these templates use [decAPI](https://decapi.me/twitch/subcount). This means that, for every channel that you are using this on, you must log in to that account and authenticate your account with the API through [this link](https://decapi.me/auth/twitch?scopes=user_read+channel_subscriptions&redirect=subcount). Afterwards, you can replace the "\<streamer>" value with your Twitch username. You can find the location for this value in the README for each template.
