@@ -1,4 +1,4 @@
-async function apiCall(target) {
+async function apiCall() {
   const response = await fetch('https://decapi.me/twitch/subcount/<streamer>');
   const json = await response.json();
   $('#value').text(parseInt(json, 10));
@@ -20,7 +20,7 @@ function setWidth(current, goal) {
 }
 
 document.addEventListener('goalLoad', function(obj) {
-	apiCall(obj.detail.amount.target).then(value => setWidth($('#value').text(), obj.detail.amount.target))
+	apiCall().then(() => setWidth($('#value').text(), obj.detail.amount.target))
 });
 
 document.addEventListener('goalEvent', function(obj) {
